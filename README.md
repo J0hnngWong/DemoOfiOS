@@ -1,2 +1,2 @@
 # DemoOfiOS
-A lot demo of iOS application
+A lot demos of iOS application
