@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LabelRectCalculateDemo/LabelRectCalculateDemo/LabelRectCalculateDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:GradientAnimatedColorDemo/GradientAnimatedColorDemo.xcodeproj">
    </FileRef>
    <FileRef
