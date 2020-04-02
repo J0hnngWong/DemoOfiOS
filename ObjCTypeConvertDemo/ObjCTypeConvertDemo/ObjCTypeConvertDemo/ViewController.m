@@ -60,7 +60,13 @@
     //number from object orderId 是string 转换为number再转换string 超过长度
     NSString *orderIdStr6 = @"910238492731937384023424317236479216391699102384927319373840234243172364792163916991023849273193738402342431723647921639169910238492731937384023424317236479216391699102384927319373840234243172364792163916991023849273193738402342431723647921639169910238492731937384023424317236479216391699102384927319373840123";//最长308位 否则就是nil(null)
     NSString *orderIdStr6_1 = [formatter numberFromString:orderIdStr6].stringValue;
-    NSLog(@"\n 4 \n str: %@ \n str str: %@", orderIdStr6, orderIdStr6_1);
+    NSLog(@"\n 6 \n str: %@ \n str str: %@", orderIdStr6, orderIdStr6_1);
+    
+    //对于id 类型的问题
+    NSString *orderIdStr7 = @"9102384927319373840";
+    id x = orderIdStr7;
+    NSUInteger orderIdInt7 = x;
+    NSLog(@"\n 7 \n str: %@ \n long: %lu", orderIdStr7, orderIdInt7);
 }
 
 
