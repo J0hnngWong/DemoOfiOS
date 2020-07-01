@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let testView = FeedBackView(frame: CGRect(x: 100, y: 200, width: 60, height: 60), feedBackType: [.touch, .visual])
+    let testView = FeedBackView(frame: CGRect(x: 100, y: 200, width: 150, height: 150), feedBackType: [.touch, .visual])
        
 
     override func viewDidLoad() {
        super.viewDidLoad()
        
        view.backgroundColor = .gray
-       
+        testView.layer.cornerRadius = 10
        testView.backgroundColor = .red
        view.addSubview(testView)
     }

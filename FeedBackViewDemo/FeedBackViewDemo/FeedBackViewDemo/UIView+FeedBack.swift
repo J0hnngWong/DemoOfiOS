@@ -86,8 +86,13 @@ class FeedBackView: UIView {
     }
     
     func doScaleFeedBackAnimation(type: VisualFeedBackType) {
-        let animation = CABasicAnimation(keyPath: "transform.scale")
-        animation.duration = 0.15
+        let animation = CASpringAnimation(keyPath: "transform.scale")
+        animation.damping = 100 // 阻力系数 默认 10
+        animation.mass = 0.1 // 到底部的质量 默认1
+        animation.initialVelocity = 10 // 初始弹性 默认0
+        animation.stiffness = 100 // 僵硬系数
+        
+        animation.duration = animation.settlingDuration //3
         animation.repeatCount = 0
         animation.autoreverses = false
         animation.isRemovedOnCompletion = false
