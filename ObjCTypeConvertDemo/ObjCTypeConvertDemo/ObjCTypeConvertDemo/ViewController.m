@@ -67,7 +67,96 @@
     id x = orderIdStr7;
     NSUInteger orderIdInt7 = x;
     NSLog(@"\n 7 \n str: %@ \n long: %lu", orderIdStr7, orderIdInt7);
+    
+    NSDictionary *dict1 = @{@"orderId":@(9102384927319373840)};
+    NSString * orderIdStr8 = [self orEmptyOrderId:[self stringFromObject:dict1 key:@"orderId"]];
+    NSLog(@"\n 8 \n str: %@", orderIdStr8);
+    
+    NSString *url = @"http://imdada.ndev.com/supplier/order/detail?orderId=9102384927319373840";
+    NSString *orderIdStr9 = [self queryStringFromURL:[NSURL URLWithString:url] key:@"orderId"];
+    NSLog(@"\n 9 \n str: %@", orderIdStr9);
+}
+
+- (void)callTestParameterType
+{
+    NSString *strParam = @"111";
+    NSUInteger intValue = 22123;
+//    [self testParameterType:strParam param2:intValue];
+    
+}
+
+- (void)testParameterType:(NSUInteger)intValue param2:(NSString *)stringValue
+{
+    
 }
 
 
+
+- (NSString *)stringFromObject:(NSDictionary *)dictionary key:(NSString *)key {
+    if (!dictionary || ![dictionary isKindOfClass:[NSDictionary class]]) {
+        return @"";
+    }
+    
+    id object = [dictionary valueForKey:key];
+    if ([object isKindOfClass:[NSString class]] &&
+        ([self isEmptyString:object] || [@"<null>" isEqualToString:object])) {
+        return @"";
+    }
+    
+    if ([object isKindOfClass:[NSString class]]) {
+        return object;
+    } else if ([object isKindOfClass:[NSNumber class]]) {
+        return [object stringValue];
+    }
+    return @"";
+}
+
+- (BOOL)isEmptyString:(NSString *)string
+{
+    NSCharacterSet *aCharacterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    BOOL isEmpty = ([string isKindOfClass:[NSString class]] && [@"" isEqualToString:[string stringByTrimmingCharactersInSet:aCharacterSet]]);
+    return !string || [string isEqual:[NSNull null]] || isEmpty;
+}
+
+
+- (NSString *)orEmptyOrderId:(NSString * _Nullable)str
+{
+    if ([self isEmptyString:str]) {
+        return @"0";
+    }
+    return str;
+}
+
+
+- (NSString *)queryStringFromURL:(NSURL *)url key:(NSString *)key
+{
+    if ([self isEmptyString:key] || [self isEmptyString:url.absoluteString]) {
+        return @"";
+    }
+    
+    NSRange range = [url.absoluteString rangeOfString:@"?"];
+    if (range.location == NSNotFound || url.absoluteString.length <= range.location + range.length) {
+        return @"";
+    }
+    NSString *query = [url.absoluteString substringFromIndex:range.location + 1];
+    NSArray *quertItems = [query componentsSeparatedByString:@"&"];
+    for (NSString *queryItem in quertItems) {
+        NSArray *items = [queryItem componentsSeparatedByString:@"="];
+        if ([key isEqualToString:items.firstObject]) {
+            return items.lastObject;
+        }
+    }
+    
+//    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:YES];
+//    for (NSURLQueryItem *item in urlComponents.queryItems)
+//    {
+//        if ([item.name isEqualToString:key]) {
+//            return item.value;
+//        }
+//    }
+    return @"";
+}
+
 @end
+
+

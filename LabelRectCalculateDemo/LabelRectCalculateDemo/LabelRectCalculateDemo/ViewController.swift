@@ -46,6 +46,6 @@ class ViewController: UIViewController {
 
 extension String {
     func boundingWith(font: UIFont, specifiedWith: CGFloat = CGFloat.infinity, specifiedHeight: CGFloat = CGFloat.infinity) -> CGRect {
-        return NSString(string: self).boundingRect(with: CGSize(width: specifiedWith, height: specifiedHeight), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font : font], context: nil)
+        return NSString(string: self).boundingRect(with: CGSize(width: specifiedWith, height: specifiedHeight), options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [NSAttributedString.Key.font : font], context: nil)
     }
 }

@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25A43C2E5D858735E5D59008 /* Pods_ObjCTypeConvertDemo_ObjCTypeConvertDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8B89C17522DB339B2C02F4 /* Pods_ObjCTypeConvertDemo_ObjCTypeConvertDemoUITests.framework */; };
+		7857518506CECBADCF923897 /* Pods_ObjCTypeConvertDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD467B06D06B890D1C729A8C /* Pods_ObjCTypeConvertDemoTests.framework */; };
 		78F61EA824358B54001B37DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F61EA724358B54001B37DB /* AppDelegate.m */; };
 		78F61EAB24358B54001B37DB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F61EAA24358B54001B37DB /* SceneDelegate.m */; };
 		78F61EAE24358B54001B37DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F61EAD24358B54001B37DB /* ViewController.m */; };
@@ -36,6 +38,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E8B89C17522DB339B2C02F4 /* Pods_ObjCTypeConvertDemo_ObjCTypeConvertDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjCTypeConvertDemo_ObjCTypeConvertDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7831FB7E243D812A0004E56C /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MJExtension.m"; path = "Pods/MJExtension/MJExtension/NSString+MJExtension.m"; sourceTree = SOURCE_ROOT; };
+		7831FB7F243D812A0004E56C /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJClass.h"; path = "Pods/MJExtension/MJExtension/NSObject+MJClass.h"; sourceTree = SOURCE_ROOT; };
+		7831FB80243D812A0004E56C /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJFoundation.m; path = Pods/MJExtension/MJExtension/MJFoundation.m; sourceTree = SOURCE_ROOT; };
+		7831FB81243D812A0004E56C /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MJExtension.h"; path = "Pods/MJExtension/MJExtension/NSString+MJExtension.h"; sourceTree = SOURCE_ROOT; };
+		7831FB82243D812A0004E56C /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJExtensionConst.h; path = Pods/MJExtension/MJExtension/MJExtensionConst.h; sourceTree = SOURCE_ROOT; };
+		7831FB83243D812A0004E56C /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJExtensionConst.m; path = Pods/MJExtension/MJExtension/MJExtensionConst.m; sourceTree = SOURCE_ROOT; };
+		7831FB84243D812A0004E56C /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJExtension.h; path = Pods/MJExtension/MJExtension/MJExtension.h; sourceTree = SOURCE_ROOT; };
+		7831FB85243D812A0004E56C /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJProperty.h"; path = "Pods/MJExtension/MJExtension/NSObject+MJProperty.h"; sourceTree = SOURCE_ROOT; };
+		7831FB86243D812A0004E56C /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJCoding.m"; path = "Pods/MJExtension/MJExtension/NSObject+MJCoding.m"; sourceTree = SOURCE_ROOT; };
+		7831FB87243D812A0004E56C /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJProperty.h; path = Pods/MJExtension/MJExtension/MJProperty.h; sourceTree = SOURCE_ROOT; };
+		7831FB88243D812A0004E56C /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJFoundation.h; path = Pods/MJExtension/MJExtension/MJFoundation.h; sourceTree = SOURCE_ROOT; };
+		7831FB89243D812A0004E56C /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJKeyValue.h"; path = "Pods/MJExtension/MJExtension/NSObject+MJKeyValue.h"; sourceTree = SOURCE_ROOT; };
+		7831FB8A243D812A0004E56C /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJProperty.m"; path = "Pods/MJExtension/MJExtension/NSObject+MJProperty.m"; sourceTree = SOURCE_ROOT; };
+		7831FB8B243D812A0004E56C /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJPropertyType.h; path = Pods/MJExtension/MJExtension/MJPropertyType.h; sourceTree = SOURCE_ROOT; };
+		7831FB8C243D812A0004E56C /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJPropertyKey.m; path = Pods/MJExtension/MJExtension/MJPropertyKey.m; sourceTree = SOURCE_ROOT; };
+		7831FB8D243D812A0004E56C /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJPropertyKey.h; path = Pods/MJExtension/MJExtension/MJPropertyKey.h; sourceTree = SOURCE_ROOT; };
+		7831FB8E243D812A0004E56C /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJPropertyType.m; path = Pods/MJExtension/MJExtension/MJPropertyType.m; sourceTree = SOURCE_ROOT; };
+		7831FB8F243D812A0004E56C /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJCoding.h"; path = "Pods/MJExtension/MJExtension/NSObject+MJCoding.h"; sourceTree = SOURCE_ROOT; };
+		7831FB90243D812A0004E56C /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJKeyValue.m"; path = "Pods/MJExtension/MJExtension/NSObject+MJKeyValue.m"; sourceTree = SOURCE_ROOT; };
+		7831FB91243D812A0004E56C /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJClass.m"; path = "Pods/MJExtension/MJExtension/NSObject+MJClass.m"; sourceTree = SOURCE_ROOT; };
+		7831FB92243D812A0004E56C /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJProperty.m; path = Pods/MJExtension/MJExtension/MJProperty.m; sourceTree = SOURCE_ROOT; };
 		78F61EA324358B54001B37DB /* ObjCTypeConvertDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCTypeConvertDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F61EA624358B54001B37DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78F61EA724358B54001B37DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +78,8 @@
 		78F61EC924358B56001B37DB /* ObjCTypeConvertDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCTypeConvertDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F61ECD24358B56001B37DB /* ObjCTypeConvertDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCTypeConvertDemoUITests.m; sourceTree = "<group>"; };
 		78F61ECF24358B56001B37DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9463355992D35619286C9C /* Pods_ObjCTypeConvertDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjCTypeConvertDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD467B06D06B890D1C729A8C /* Pods_ObjCTypeConvertDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjCTypeConvertDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7857518506CECBADCF923897 /* Pods_ObjCTypeConvertDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +102,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A43C2E5D858735E5D59008 /* Pods_ObjCTypeConvertDemo_ObjCTypeConvertDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7782130812F40A2E08A3189C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD9463355992D35619286C9C /* Pods_ObjCTypeConvertDemo.framework */,
+				4E8B89C17522DB339B2C02F4 /* Pods_ObjCTypeConvertDemo_ObjCTypeConvertDemoUITests.framework */,
+				FD467B06D06B890D1C729A8C /* Pods_ObjCTypeConvertDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7831FB7D243D80F50004E56C /* MJExtension3.2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				7831FB84243D812A0004E56C /* MJExtension.h */,
+				7831FB82243D812A0004E56C /* MJExtensionConst.h */,
+				7831FB83243D812A0004E56C /* MJExtensionConst.m */,
+				7831FB88243D812A0004E56C /* MJFoundation.h */,
+				7831FB80243D812A0004E56C /* MJFoundation.m */,
+				7831FB87243D812A0004E56C /* MJProperty.h */,
+				7831FB92243D812A0004E56C /* MJProperty.m */,
+				7831FB8D243D812A0004E56C /* MJPropertyKey.h */,
+				7831FB8C243D812A0004E56C /* MJPropertyKey.m */,
+				7831FB8B243D812A0004E56C /* MJPropertyType.h */,
+				7831FB8E243D812A0004E56C /* MJPropertyType.m */,
+				7831FB7F243D812A0004E56C /* NSObject+MJClass.h */,
+				7831FB91243D812A0004E56C /* NSObject+MJClass.m */,
+				7831FB8F243D812A0004E56C /* NSObject+MJCoding.h */,
+				7831FB86243D812A0004E56C /* NSObject+MJCoding.m */,
+				7831FB89243D812A0004E56C /* NSObject+MJKeyValue.h */,
+				7831FB90243D812A0004E56C /* NSObject+MJKeyValue.m */,
+				7831FB85243D812A0004E56C /* NSObject+MJProperty.h */,
+				7831FB8A243D812A0004E56C /* NSObject+MJProperty.m */,
+				7831FB81243D812A0004E56C /* NSString+MJExtension.h */,
+				7831FB7E243D812A0004E56C /* NSString+MJExtension.m */,
+			);
+			path = MJExtension3.2.1;
+			sourceTree = "<group>";
+		};
 		78F61E9A24358B54001B37DB = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +154,7 @@
 				78F61EC124358B56001B37DB /* ObjCTypeConvertDemoTests */,
 				78F61ECC24358B56001B37DB /* ObjCTypeConvertDemoUITests */,
 				78F61EA424358B54001B37DB /* Products */,
+				7782130812F40A2E08A3189C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +171,7 @@
 		78F61EA524358B54001B37DB /* ObjCTypeConvertDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7831FB7D243D80F50004E56C /* MJExtension3.2.1 */,
 				78F61EA624358B54001B37DB /* AppDelegate.h */,
 				78F61EA724358B54001B37DB /* AppDelegate.m */,
 				78F61EA924358B54001B37DB /* SceneDelegate.h */,
@@ -161,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78F61ED524358B56001B37DB /* Build configuration list for PBXNativeTarget "ObjCTypeConvertDemoTests" */;
 			buildPhases = (
+				DEBBD503B040B23A4FA36F48 /* [CP] Check Pods Manifest.lock */,
 				78F61EBA24358B56001B37DB /* Sources */,
 				78F61EBB24358B56001B37DB /* Frameworks */,
 				78F61EBC24358B56001B37DB /* Resources */,
@@ -179,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78F61ED824358B56001B37DB /* Build configuration list for PBXNativeTarget "ObjCTypeConvertDemoUITests" */;
 			buildPhases = (
+				7667D26D442259B707C07CB1 /* [CP] Check Pods Manifest.lock */,
 				78F61EC524358B56001B37DB /* Sources */,
 				78F61EC624358B56001B37DB /* Frameworks */,
 				78F61EC724358B56001B37DB /* Resources */,
+				6DE03A327AB0FA803D7D047A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +332,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DE03A327AB0FA803D7D047A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjCTypeConvertDemo-ObjCTypeConvertDemoUITests/Pods-ObjCTypeConvertDemo-ObjCTypeConvertDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ObjCTypeConvertDemo-ObjCTypeConvertDemoUITests/Pods-ObjCTypeConvertDemo-ObjCTypeConvertDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjCTypeConvertDemo-ObjCTypeConvertDemoUITests/Pods-ObjCTypeConvertDemo-ObjCTypeConvertDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7667D26D442259B707C07CB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjCTypeConvertDemo-ObjCTypeConvertDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEBBD503B040B23A4FA36F48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjCTypeConvertDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78F61E9F24358B54001B37DB /* Sources */ = {

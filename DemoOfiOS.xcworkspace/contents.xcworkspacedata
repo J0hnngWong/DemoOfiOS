@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FeedBackViewDemo/FeedBackViewDemo/FeedBackViewDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SwiftServletLinkDemo/SwiftServletLinkDemo/SwiftServletLinkDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ObjCFileSystemDemo/ObjCFileSystemDemo/ObjCFileSystemDemo.xcodeproj">
    </FileRef>
    <FileRef
