@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let navigationTransitionDelegate = NavigationControllerTransition()
+    let navigationTransitionDelegate = NavigationControllerRaisingAnimationTransition()
 
     override func viewDidLoad() {
         super.viewDidLoad()
