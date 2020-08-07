@@ -40,7 +40,7 @@ class PushRasieAnimation: NSObject, UIViewControllerAnimatedTransitioning {
 //                toVC?.navigationController?.view.layer.render(in: context)
 ////                toVC?.navigationController?.view.drawHierarchy(in: fromViewTmp.bounds, afterScreenUpdates: true)
 //            }
-//            
+//
 //            let image = UIGraphicsGetImageFromCurrentImageContext()
 //            UIGraphicsEndImageContext()
             // 方法2
@@ -61,16 +61,21 @@ class PushRasieAnimation: NSObject, UIViewControllerAnimatedTransitioning {
             let image = UIImage(data: backGroundImageData)
             
             let backGroundImageView = UIImageView(image: image)
-            
+            backGroundImageView.frame = UIScreen.main.bounds
             
 //            toViewTmp.addSubview(backGroundImageView)
 //            toViewTmp.sendSubviewToBack(backGroundImageView)
+            
+            
             if let toVCTmp = toVC as? SecondViewController {
                 toVCTmp.backGroundView = backGroundImageView
             }
             // 3. Add toVC's view to containerView
             let containerView = transitionContext.containerView
-            containerView.addSubview(fromViewTmp)
+            for view in containerView.subviews {
+                view.removeFromSuperview()
+            }
+            containerView.addSubview(backGroundImageView)
             containerView.addSubview(toViewTmp)
         }
         

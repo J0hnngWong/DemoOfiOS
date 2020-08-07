@@ -36,8 +36,8 @@ extension UIViewController {
                 context.translateBy(x: -imageSize.width, y: -imageSize.height)
             }
             
-//            window.drawHierarchy(in: window.bounds, afterScreenUpdates: true)
-            window.layer.render(in: context)
+            window.drawHierarchy(in: window.bounds, afterScreenUpdates: false)
+//            window.layer.render(in: context)
             
             context.restoreGState()
         }
