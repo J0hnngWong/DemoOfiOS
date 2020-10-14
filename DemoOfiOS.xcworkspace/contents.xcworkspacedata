@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UICollectionViewDemo/UICollectionViewDemo/UICollectionViewDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIViewControllerCustomTrasitionDemo/UIViewControllerCustomTrasitionDemo/UIViewControllerCustomTrasitionDemo.xcodeproj">
    </FileRef>
    <FileRef
