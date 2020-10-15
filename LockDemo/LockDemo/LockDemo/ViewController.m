@@ -147,6 +147,25 @@
 
 - (void)recursiveLockDemo {
     
+    // 会记录上锁和解锁的次数，当二者平衡的时候，才会释放锁，其它线程才可以上锁成功
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        id<NSLocking> lock = self.recursiveLock;
+        
+        static void (^recursiveBlock)(int);
+        recursiveBlock = ^(int count) {
+            NSLog(@"递归第%d层加锁", count);
+            [lock lock];
+            if (count > 0) {
+                recursiveBlock(count - 1);
+            }
+            [lock unlock];
+            NSLog(@"递归第%d层解锁成功", count);
+        };
+        recursiveBlock(3);
+        NSLog(@"线程%@ 执行结束", NSThread.currentThread);
+    });
 }
 
 void printThread() {
